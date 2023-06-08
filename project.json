@@ -1,10 +1,10 @@
 {
-  "name": "ReFramework_BANK_APP_DISPATCHER",
-  "description": "This process reads input file and adds item to the queue for processing",
+  "name": "ReFramework_BANK_APP_PERFORMER",
+  "description": "Robotic Enterprise Framework for inputting data into app and sending an email to customer",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
-    "UiPath.Mail.Activities": "[1.18.2]",
+    "UiPath.Mail.Activities": "[1.20.0]",
     "UiPath.System.Activities": "[23.4.2]",
     "UiPath.Testing.Activities": "[23.4.0]",
     "UiPath.UIAutomation.Activities": "[23.4.4]"
@@ -42,14 +42,57 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a43be8f4-a067-4689-a1d9-b2b5cb09f938",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\GetTransactionDataTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1b901dec-b02e-4987-be63-c77a9df83d8e",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "dae39e79-8ba1-46d2-82f0-3ea3b6a40e9b",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\InitAllSettingsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1132b0c8-9f7b-4433-a767-5aa566585b92",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\MainTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5e5e477c-399e-47bb-8195-546bd7b0e156",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\ProcessTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "02600765-e917-4f5b-a28c-0e4ae9735e20",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+      }
+    ],
     "modernBehavior": true
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "f3f4762f-9c75-47b2-b645-4eddbadf959a",
+      "uniqueId": "32c3a9ce-768c-466a-a922-8fd76874d0e1",
       "input": [],
       "output": []
     }
