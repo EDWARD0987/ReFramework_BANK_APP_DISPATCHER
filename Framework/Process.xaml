@@ -122,7 +122,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="580,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
     <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="580,56" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Customer Registration" sap:VirtualizedContainerService.HintSize="580,2511" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="f4c12ca5-9d87-4914-915c-d8136933cedd" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" ContinueOnError="False" DisplayName="Use Application: Customer Registration" sap:VirtualizedContainerService.HintSize="580,2511" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="f4c12ca5-9d87-4914-915c-d8136933cedd" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -201,7 +201,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Dear&quot; +  in_TransactionItem.SpecificContent(&quot;Customer&quot;).ToString +&quot; , Your Registration is complete. Your registration number is&quot; + RegNo + &quot;. &quot;]" Cc="shazzymaytryx@yahoo.com" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="388,152" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="USER REGISTRATION COMPLETED" To="[in_TransactionItem.SpecificContent(&quot;Email&quot;).ToString]">
+                    <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;Dear &quot;  +   in_TransactionItem.SpecificContent(&quot;Customer&quot;).ToString +&quot; , Your Registration is complete. Your registration number is &quot;  +    RegNo + &quot;. &quot;]" Cc="shazzymaytryx@yahoo.com" ContinueOnError="True" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="388,152" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="USER REGISTRATION COMPLETED" To="[in_TransactionItem.SpecificContent(&quot;Email&quot;).ToString]">
                       <ui:SendOutlookMail.Files>
                         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                       </ui:SendOutlookMail.Files>
