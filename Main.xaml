@@ -166,7 +166,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="This step is where we loop through excel using a dictionary of CurrentRow(&quot;Customer&quot;).ToString and apply same to all the headers in excel input file" DisplayName="Add Queue Item" sap:VirtualizedContainerService.HintSize="450,251" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="Employee_Queue" Reference="[CurrentRow(&quot;id&quot;).ToString]">
+                          <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="This step is where we loop through excel input file using a dictionary of CurrentRow(&quot;Customer&quot;).ToString and apply same to all the headers in excel input file" DisplayName="Add Queue Item" sap:VirtualizedContainerService.HintSize="450,251" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="Employee_Queue" Reference="[CurrentRow(&quot;id&quot;).ToString]">
                             <ui:AddQueueItem.ItemInformation>
                               <InArgument x:TypeArguments="x:String" x:Key="Customer">[CurrentRow("Customer").ToString]</InArgument>
                               <InArgument x:TypeArguments="x:String" x:Key="City">[CurrentRow("City").ToString]</InArgument>
