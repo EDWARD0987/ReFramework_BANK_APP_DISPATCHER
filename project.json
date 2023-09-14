@@ -1,5 +1,6 @@
 {
   "name": "ReFramework_BANK_APP_DISPATCHER",
+  "projectId": "3d7fd62f-56f1-4a3c-a7d7-af83a1d77649",
   "description": "This process reads input file and adds item to the queue for processing",
   "main": "Main.xaml",
   "dependencies": {
